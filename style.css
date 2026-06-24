@@ -1267,6 +1267,12 @@ select.form-control {
     width: 100%;
   }
 
+  /* Keep scrolled navbar transparent on mobile */
+  .navbar.active {
+    background-color: transparent;
+    border-bottom: none;
+  }
+
   /* Structural Stacking */
   .about-grid,
   .contact-grid {
