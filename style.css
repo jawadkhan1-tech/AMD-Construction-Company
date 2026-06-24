@@ -1238,6 +1238,8 @@ select.form-control {
   /* Navigation Hamburger layout */
   .nav-toggle {
     display: block;
+    margin-left: auto;
+    z-index: 1000;
   }
   
   .nav-menu {
