@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Manan Merzai & Brothers | Built to Last. Built to Lead.</title>
+  <meta name="description" content="Pakistan's most trusted heavy construction company specializing in infrastructure, commercial, residential, and industrial mega-projects.">
+  
+  <!-- Security Meta Tags -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://images.unsplash.com; connect-src 'self' https://formsubmit.co; frame-ancestors 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
+  
+  <!-- Font Loading (Requirement #5) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     1. NAVIGATION BAR
+     ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <img src="Logo-AMB.png" alt="Abdul Manan Merzai & Brothers" class="logo-img">
+      </a>
+      
+      <!-- Hamburger Trigger for mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#stats" class="nav-link">Stats</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="container">
+        <div class="hero-content">
+          <span class="section-tag" style="opacity: 0; animation: heroFadeIn 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;">Heavy Engineering & Construction</span>
+          <h1 class="hero-title" id="hero-headline">We Build What<br>Others Only Imagine</h1>
+          <p class="hero-subtitle" id="hero-subtext">
+            Pakistan's most trusted name in heavy construction, commercial infrastructure, mega bridge systems, and industrial solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="hero-btn-quote">Get a Quote</a>
+            <a href="#projects" class="btn btn-outline" id="hero-btn-work">Our Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       3. TICKER STRIP (Requirement #4)
+       ========================================================================== -->
+    <div class="ticker-strip" id="ticker-strip">
+      <div class="ticker-wrap">
+        <!-- Content string repeated twice inside the container for a seamless loop animation -->
+        <span class="ticker-content">
+          INFRASTRUCTURE · COMMERCIAL · RESIDENTIAL · INDUSTRIAL · BRIDGES · ROADS · HIGH-RISE · STEEL WORKS · INFRASTRUCTURE · COMMERCIAL · RESIDENTIAL · INDUSTRIAL · BRIDGES · ROADS · HIGH-RISE · STEEL WORKS ·&nbsp;
+        </span>
+        <span class="ticker-content">
+          INFRASTRUCTURE · COMMERCIAL · RESIDENTIAL · INDUSTRIAL · BRIDGES · ROADS · HIGH-RISE · STEEL WORKS · INFRASTRUCTURE · COMMERCIAL · RESIDENTIAL · INDUSTRIAL · BRIDGES · ROADS · HIGH-RISE · STEEL WORKS ·&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+       4. ABOUT SECTION
+       ========================================================================== -->
+    <section class="section reveal-on-scroll" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who We Are</span>
+          <h2>A Legacy of Iron & Steel</h2>
+        </div>
+        
+        <div class="about-grid">
+          <!-- Left side: Editorial History Paragraphs -->
+          <div class="about-history">
+            <p class="about-intro-paragraph">
+              For over a decade, Abdul Manan Merzai & Brothers has reshaped the skyline and infrastructure of Pakistan. We approach heavy construction with absolute precision, zero compromise on safety, and a grit that matches the materials we work with.
+            </p>
+            <p class="about-details-paragraph">
+              From deep foundations to soaring high-rises, national highway networks to robust industrial complexes, we operate as a full-service contracting and engineering powerhouse. Our vertical integration ensures that every machinery unit, engineer, and raw asset aligns with strict international standards, enabling us to deliver complex projects on budget and ahead of schedule.
+            </p>
+          </div>
+          
+          <!-- Right side: Timeline of Milestones (gold line, no circles) -->
+          <div class="timeline" id="about-timeline">
+            <div class="timeline-item reveal-on-scroll stagger-1">
+              <div class="timeline-node"></div>
+              <span class="timeline-year">2013</span>
+              <h3 class="timeline-title">Foundation of Excellence</h3>
+              <p class="timeline-desc">Established in Karachi as a specialized civil contracting firm, handling structural masonry and local infrastructure work.</p>
+            </div>
+            <div class="timeline-item reveal-on-scroll stagger-2">
+              <div class="timeline-node"></div>
+              <span class="timeline-year">2017</span>
+              <h3 class="timeline-title">First Highway & Bridge Mega-Project</h3>
+              <p class="timeline-desc">Awarded and successfully executed a 45km highway link, showcasing bridge engineering expertise and scaling operations.</p>
+            </div>
+            <div class="timeline-item reveal-on-scroll stagger-3">
+              <div class="timeline-node"></div>
+              <span class="timeline-year">2021</span>
+              <h3 class="timeline-title">500+ Engineers & Operators</h3>
+              <p class="timeline-desc">Expanded fleet size and engineering roster, establishing dedicated departments for high-rise commercial structures.</p>
+            </div>
+            <div class="timeline-item reveal-on-scroll stagger-4">
+              <div class="timeline-node"></div>
+              <span class="timeline-year">2025</span>
+              <h3 class="timeline-title">Sector Leadership</h3>
+              <p class="timeline-desc">Reaching a milestone of 1,000 active employees and 50+ mega projects completed across multiple provinces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       5. STATS / COUNTER SECTION
+       ========================================================================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <!-- Stat 1 -->
+          <div class="stat-block reveal-on-scroll stagger-1">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-block reveal-on-scroll stagger-2">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="100">0</span>
+            </div>
+            <div class="stat-label">Machinery Units</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-block reveal-on-scroll stagger-3">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="1000">0</span>
+            </div>
+            <div class="stat-label">Employees</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-block reveal-on-scroll stagger-4">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="50">0</span>
+            </div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       6. SERVICES SECTION
+       ========================================================================== -->
+    <section class="section bg-alt reveal-on-scroll" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2>Engineering Services</h2>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Service 1: Road & Highway Construction -->
+          <div class="service-card reveal-on-scroll stagger-1" id="service-road">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 22L4 2H20L22 22H2ZM11 20H13V16H11V20ZM11 14H13V10H11V14ZM11 8H13V4H11V8Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Road & Highway</h3>
+            <p class="service-desc">Laying major transport corridors, regional bypass networks, asphalt grading, and heavy paving works.</p>
+          </div>
+
+          <!-- Service 2: Commercial Building -->
+          <div class="service-card reveal-on-scroll stagger-2" id="service-commercial">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3H21V21H3V3ZM5 5V19H19V5H5ZM7 7H10V10H7V7ZM14 7H17V10H14V7ZM7 14H10V17H7V14ZM14 14H17V17H14V14Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Commercial Building</h3>
+            <p class="service-desc">Delivering corporate offices, modern towers, retail venues, and steel skeleton multi-story structures.</p>
+          </div>
+
+          <!-- Service 3: Residential Complexes -->
+          <div class="service-card reveal-on-scroll stagger-3" id="service-residential">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Residential Complexes</h3>
+            <p class="service-desc">Constructing secure gated communities, luxury mid-rises, and master-planned urban living structures.</p>
+          </div>
+
+          <!-- Service 4: Bridge Engineering -->
+          <div class="service-card reveal-on-scroll stagger-1" id="service-bridge">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 19V15C5 15 6 12 7 10C8 8 9 5 12 5C15 5 16 8 17 10C18 12 19 15 22 15V19H20V17C17.5 17 16.5 15.2 15.4 13.2C14.3 11.2 13.4 9 12 9C10.6 9 9.7 11.2 8.6 13.2C7.5 15.2 6.5 17 4 17V19H2Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Bridge Engineering</h3>
+            <p class="service-desc">Creating structural links over rivers and ravines, involving pre-stressed concrete spans and truss anchors.</p>
+          </div>
+
+          <!-- Service 5: Industrial Facilities -->
+          <div class="service-card reveal-on-scroll stagger-2" id="service-industrial">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 22H2V10L10 6L14 10L22 4V22ZM4 20H8V12H4V20ZM10 20H14V12H10V20ZM16 20H20V12H16V20Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Industrial Facilities</h3>
+            <p class="service-desc">Assembling manufacturing plants, warehouses, heavy oil refineries, and concrete foundation bases.</p>
+          </div>
+
+          <!-- Service 6: Interior & Finishing Works -->
+          <div class="service-card reveal-on-scroll stagger-3" id="service-interior">
+            <div class="service-icon-wrap">
+              <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2H7C5.9 2 5 2.9 5 4V13C5 14.1 5.9 15 7 15H17C18.1 15 19 14.1 19 13V4C19 2.9 18.1 2 17 2ZM7 4H12V13H7V4ZM17 13H14V4H17V13ZM5 17H19V19H5V17ZM2 21H22V23H2V21Z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Interior & Finishing</h3>
+            <p class="service-desc">Providing premium commercial fit-outs, structural wall finishes, and custom aesthetic millwork details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       7. FEATURED PROJECTS SECTION
+       ========================================================================== -->
+    <section class="section reveal-on-scroll" id="projects" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2>Our Work Speaks</h2>
+        </div>
+      </div>
+      
+      <!-- Full width slider container, no padding, edge-to-edge -->
+      <div id="project-slider" class="project-slider-container">
+        <!-- Blurred Immersive Background -->
+        <img id="slider-bg-img" class="slider-bg-img" src="" alt="" draggable="false">
+        <div class="slider-bg-overlay"></div>
+
+        <!-- Main Image -->
+        <div class="slider-main-wrapper">
+          <img id="slider-main-img" class="slider-main-img" src="" alt="Project Presentation" draggable="false">
+          <!-- Transparent overlay to prevent right-click image saving -->
+          <div class="image-protection-overlay" id="image-protection-overlay"></div>
+        </div>
+        
+        <!-- Glassmorphism Panel -->
+        <div class="slider-glass-panel">
+          <div class="slider-info">
+            <span id="slider-category" class="slider-category"></span>
+            <h3 id="slider-title" class="slider-title"></h3>
+          </div>
+          <div id="slider-thumbnails" class="slider-thumbnails"></div>
+          <div id="slider-dots" class="slider-dots"></div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button id="slider-prev" class="slider-arrow slider-arrow-prev" aria-label="Previous Project">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button id="slider-next" class="slider-arrow slider-arrow-next" aria-label="Next Project">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       8. WHY CHOOSE US SECTION
+       ========================================================================== -->
+    <section class="section reveal-on-scroll" id="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Standard</span>
+          <h2>Why Partner With AMB</h2>
+        </div>
+
+        <div class="why-grid">
+          <!-- Column 1 -->
+          <div class="why-card reveal-on-scroll stagger-1">
+            <div class="why-icon-wrap">
+              <svg class="why-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 7C13.66 7 15 8.34 15 10C15 11.66 13.66 13 12 13C10.34 13 9 11.66 9 10C9 8.34 10.34 7 12 7ZM12 15C14 15 18 16 18 17.5V19H6V17.5C6 16 10 15 12 15Z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Certified & Licensed</h3>
+            <p class="why-desc">We possess premium-tier ISO engineering certificates and full licensing approvals to run complex governmental and international joint-venture infrastructure works.</p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="why-card reveal-on-scroll stagger-2">
+            <div class="why-icon-wrap">
+              <svg class="why-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM16.2 16.2L11 13V7H12.5V12.2L17 14.8L16.2 16.2Z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">On-Time Delivery</h3>
+            <p class="why-desc">Strict critical-path scheduling, 24/7 site operations when required, and dedicated logistics mean our projects close on schedule without structural or administrative delays.</p>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="why-card reveal-on-scroll stagger-3">
+            <div class="why-icon-wrap">
+              <svg class="why-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L1 21H23L12 2ZM12 6L19.53 19H4.47L12 6ZM11 10V14H13V10H11ZM11 16V18H13V16H11Z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Safety First Culture</h3>
+            <p class="why-desc">Zero-incident vision is integrated into every workflow. We deploy heavy safety guards, certified safety helmets and equipment, and enforce routine security audits on-site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       9. CONTACT / CTA SECTION
+       ========================================================================== -->
+    <section class="section bg-alt reveal-on-scroll" id="contact">
+      <div class="container">
+        
+        <div class="contact-grid">
+          <!-- Left Column: CTA Headline & Info details -->
+          <div class="contact-info">
+            <div class="section-header">
+              <span class="section-tag">Get In Touch</span>
+              <h2>Ready to Start Your Project?</h2>
+            </div>
+            <p>
+              Partner with Pakistan's leading heavy industrial and commercial builder. Fill out our contact request form with your project scope and specifications, and our engineering estimates division will get back to you with a comprehensive analysis.
+            </p>
+            
+            <div class="contact-meta">
+              <!-- Item 1: Phone -->
+              <div class="contact-meta-item">
+                <svg class="contact-meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C9.07 21 0 11.93 0 1.00002C0 0.450017 0.450017 0 1.00002 0H4.5C5.05 0 5.5 0.450017 5.5 1.00002C5.5 2.25002 5.7 3.44002 6.07 4.57002C6.18 4.92002 6.1 5.31002 5.82 5.59002L3.62 7.79C5.07 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.69 11.9 13.08 11.82 13.43 11.93C14.55 12.3 15.75 12.5 17 12.5C17.55 12.5 18 12.95 18 13.5V17C18 17.55 17.55 18 17 18C6.07 18 3 14.93 3 4.00002C3 3.45002 3.45002 3 4.00002 3H6.62L6.62 10.79Z"/>
+                </svg>
+                <div class="contact-meta-content">
+                  <h4>Phone Number</h4>
+                  <p>0333-3781119<br>0313-3781119</p>
+                </div>
+              </div>
+
+              <!-- Item 2: WhatsApp -->
+              <div class="contact-meta-item">
+                <svg class="contact-meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.459 3.48 1.332 5.006L2 22l5.176-1.356c1.468.802 3.123 1.228 4.836 1.228 5.506 0 9.988-4.482 9.988-9.988s-4.482-9.988-9.988-9.988zm6.549 14.28c-.285.802-1.42 1.47-1.944 1.565-.478.087-.978.118-2.924-.65-2.492-.984-4.093-3.518-4.218-3.684-.125-.165-1.013-1.348-1.013-2.568 0-1.22.64-1.82.866-2.072.227-.253.497-.315.66-.315.165 0 .33.003.473.01.149.006.347-.056.544.423.2.49.684 1.67.744 1.79.06.123.09.266.01.427-.083.165-.124.269-.248.412-.124.144-.262.32-.375.43-.124.12-.253.25-.11.493.143.243.635 1.047 1.364 1.696.938.835 1.73 1.09 1.977 1.213.248.124.393.103.538-.063.144-.165.62-.723.785-.97.165-.247.33-.206.558-.123.227.082 1.442.68 1.69 1.804z" />
+                </svg>
+                <div class="contact-meta-content">
+                  <h4>WhatsApp Chat</h4>
+                  <p style="margin-top: 8px;">
+                    <a href="https://wa.me/923333781119?text=Hello%20AMB%20Construction,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer" class="whatsapp-circle-btn" title="Chat on WhatsApp">
+                      <svg style="width: 22px; height: 22px; fill: #FFFFFF;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.459 3.48 1.332 5.006L2 22l5.176-1.356c1.468.802 3.123 1.228 4.836 1.228 5.506 0 9.988-4.482 9.988-9.988s-4.482-9.988-9.988-9.988zm6.549 14.28c-.285.802-1.42 1.47-1.944 1.565-.478.087-.978.118-2.924-.65-2.492-.984-4.093-3.518-4.218-3.684-.125-.165-1.013-1.348-1.013-2.568 0-1.22.64-1.82.866-2.072.227-.253.497-.315.66-.315.165 0 .33.003.473.01.149.006.347-.056.544.423.2.49.684 1.67.744 1.79.06.123.09.266.01.427-.083.165-.124.269-.248.412-.124.144-.262.32-.375.43-.124.12-.253.25-.11.493.143.243.635 1.047 1.364 1.696.938.835 1.73 1.09 1.977 1.213.248.124.393.103.538-.063.144-.165.62-.723.785-.97.165-.247.33-.206.558-.123.227.082 1.442.68 1.69 1.804z" />
+                      </svg>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: Email -->
+              <div class="contact-meta-item">
+                <svg class="contact-meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                </svg>
+                <div class="contact-meta-content">
+                  <h4>Email Address</h4>
+                  <p><span id="obfuscated-email" data-user="abdulmanankakar777" data-domain="gmail.com">[Email Protected — Enable JS]</span></p>
+                </div>
+              </div>
+
+              <!-- Item 3: Address -->
+              <div class="contact-meta-item">
+                <svg class="contact-meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+                </svg>
+                <div class="contact-meta-content">
+                  <h4>Headquarters / Offices</h4>
+                  <p>Head Office: Shahbaz Town, Near King Kong Pizza, Quetta<br>Branch Office: Killa Saifullah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Column: Contact Form (Requirement #3) -->
+          <div class="contact-form-wrap">
+            <!-- Success banner hidden by default -->
+            <div class="success-banner" id="success-banner">
+              <strong>Form Submitted Successfully</strong>
+              Your project request details have been validated and transmitted directly to our estimative engineering team. We will get back to you shortly.
+            </div>
+
+            <form id="contact-form" novalidate autocomplete="off">
+              
+              <!-- FormSubmit Configuration: Disable captcha redirect, set subject & reply-to -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New Project Inquiry — AMB Website">
+              <input type="hidden" name="_template" value="table">
+
+              <!-- Honeypot field — hidden from real users, catches bots -->
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" name="_honey" id="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" name="Name" id="name" class="form-control" placeholder="John Doe" maxlength="50">
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" name="Email" id="email" class="form-control" placeholder="john@example.com" maxlength="100">
+              </div>
+
+              <!-- Phone Input -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" name="Phone" id="phone" class="form-control" placeholder="03001234567" maxlength="15">
+              </div>
+
+              <!-- Project Type Dropdown -->
+              <div class="form-group">
+                <label for="project-type" class="form-label">Project Type</label>
+                <select name="ProjectType" id="project-type" class="form-control">
+                  <option value="Roads & Highways">Roads & Highways</option>
+                  <option value="Commercial Buildings">Commercial Buildings</option>
+                  <option value="Residential Complexes">Residential Complexes</option>
+                  <option value="Bridge Engineering">Bridge Engineering</option>
+                  <option value="Industrial Facilities">Industrial Facilities</option>
+                  <option value="Interior Fit-Outs">Interior Fit-Outs</option>
+                </select>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="message" class="form-label">Message / Project Scope</label>
+                <textarea name="Message" id="message" class="form-control" placeholder="Describe your project size, location, and structural timeline (minimum 20 characters)..." maxlength="1000"></textarea>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">Submit Proposal</button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+     10. FOOTER
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Left: Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo" style="margin-bottom: 15px; display: inline-block;">
+            AMB <span>& BROTHERS</span>
+          </a>
+          <p>"Built to Last. Built to Lead."</p>
+          <p style="margin-top: 10px; font-size: 14px; line-height: 1.5;">Leading heavy construction services, infrastructure engineering, and commercial site developments nationwide.</p>
+        </div>
+
+        <!-- Center: Links -->
+        <div class="footer-nav">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Legacy</a></li>
+            <li><a href="#services">Capabilities</a></li>
+            <li><a href="#stats">Performance Stats</a></li>
+            <li><a href="#projects">Our Portfolio</a></li>
+            <li><a href="#contact">Contact Estimates</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Social Connections -->
+        <div class="footer-social">
+          <h4 class="footer-title">Connect With Us</h4>
+          <p style="margin-bottom: 20px; font-size: 14px;">Connect with our engineering estimation desk directly on WhatsApp for immediate inquiries.</p>
+          <div class="social-links">
+            <!-- WhatsApp Only -->
+            <a href="https://wa.me/923333781119?text=Hello%20AMB%20Construction,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.459 3.48 1.332 5.006L2 22l5.176-1.356c1.468.802 3.123 1.228 4.836 1.228 5.506 0 9.988-4.482 9.988-9.988s-4.482-9.988-9.988-9.988zm6.549 14.28c-.285.802-1.42 1.47-1.944 1.565-.478.087-.978.118-2.924-.65-2.492-.984-4.093-3.518-4.218-3.684-.125-.165-1.013-1.348-1.013-2.568 0-1.22.64-1.82.866-2.072.227-.253.497-.315.66-.315.165 0 .33.003.473.01.149.006.347-.056.544.423.2.49.684 1.67.744 1.79.06.123.09.266.01.427-.083.165-.124.269-.248.412-.124.144-.262.32-.375.43-.124.12-.253.25-.11.493.143.243.635 1.047 1.364 1.696.938.835 1.73 1.09 1.977 1.213.248.124.393.103.538-.063.144-.165.62-.723.785-.97.165-.247.33-.206.558-.123.227.082 1.442.68 1.69 1.804z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="container footer-bottom">
+        <div>
+          <p>© 2025 Abdul Manan Merzai & Brothers. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Licensing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
