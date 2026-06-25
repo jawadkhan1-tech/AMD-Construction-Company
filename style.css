@@ -1306,6 +1306,38 @@ select.form-control {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  /* Slider Mobile Fixes */
+  .project-slider-container {
+    height: 85vh;
+  }
+
+  .slider-main-wrapper {
+    width: 95%;
+    height: 95%;
+  }
+
+  .slider-glass-panel {
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    padding: 15px;
+    background: rgba(20, 20, 20, 0.6);
+    gap: 10px;
+  }
+
+  .slider-title {
+    font-size: 24px;
+  }
+
+  .slider-thumb {
+    width: 60px;
+    height: 40px;
+  }
+
+  .slider-thumbnails {
+    gap: 8px;
+  }
 }
 
 /* --- 3. Mobile (480px) --- */
