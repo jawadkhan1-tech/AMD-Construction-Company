@@ -207,7 +207,7 @@ a {
    1. NAVIGATION BAR
    ========================================================================== */
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -215,12 +215,6 @@ a {
   z-index: 1000;
   transition: var(--transition-smooth);
   background-color: transparent;
-}
-
-.navbar.active {
-  padding: 10.5px 0;
-  background-color: #0D0D0D;
-  border-bottom: 1px solid var(--color-gold);
 }
 
 .navbar .container {
@@ -244,18 +238,19 @@ a {
   color: var(--color-text-primary);
 }
 
-.logo-img {
+.logo-colored {
   height: 150px;
   width: auto;
   display: block;
+  /* Complex filter to turn the dark navy logo into bright purple (#8A2BE2) */
+  filter: brightness(0) saturate(100%) invert(29%) sepia(96%) saturate(2206%) hue-rotate(256deg) brightness(91%) contrast(106%);
   margin-top: -18px;
   margin-bottom: -25px;
   margin-left: -16px;
-  margin-right: -32px;
   transition: var(--transition-smooth);
 }
 
-.navbar.active .logo-img {
+.navbar.active .logo-colored {
   height: 110px;
   margin-top: -13px;
   margin-bottom: -18px;
@@ -1325,19 +1320,12 @@ select.form-control {
     padding: 0 20px;
   }
   
-  .logo-img {
-    height: 110px;
+  .logo-colored {
+    height: 150px;
     margin-top: -13px;
     margin-bottom: -18px;
     margin-left: -12px;
     margin-right: -24px;
-  }
-  .navbar.scrolled .logo-img {
-    height: 80px;
-    margin-top: -9px;
-    margin-bottom: -13px;
-    margin-left: -9px;
-    margin-right: -17px;
   }
   
   /* Hero customizations */
@@ -1437,14 +1425,14 @@ select.form-control {
   .navbar.scrolled {
     padding: 20px 0;
   }
-  .logo-img {
+  .logo-colored {
     height: 180px;
     margin-top: -21px;
     margin-bottom: -30px;
     margin-left: -20px;
     margin-right: -39px;
   }
-  .navbar.scrolled .logo-img {
+  .navbar.scrolled .logo-colored {
     height: 130px;
     margin-top: -15px;
     margin-bottom: -22px;
@@ -1467,14 +1455,14 @@ select.form-control {
   .navbar.scrolled {
     padding: 25px 0;
   }
-  .logo-img {
+  .logo-colored {
     height: 210px;
     margin-top: -25px;
     margin-bottom: -35px;
     margin-left: -23px;
     margin-right: -45px;
   }
-  .navbar.scrolled .logo-img {
+  .navbar.scrolled .logo-colored {
     height: 150px;
     margin-top: -18px;
     margin-bottom: -25px;

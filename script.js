@@ -13,14 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  // Sticky Navbar style change on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) {
-      navbar.classList.add('active');
-    } else {
-      navbar.classList.remove('active');
-    }
-  });
+  // Sticky Navbar style change on scroll removed as requested
 
   // Mobile menu toggle
   if (navToggle && navMenu) {
@@ -420,6 +413,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "projects-images/Ormara-road-navy-project3.png",
         "projects-images/Ormara-road-navy-project4.png"
       ]
+    },
+    {
+      title: "Paseenzai Road Killasaifullah",
+      category: "ROADS & HIGHWAYS",
+      images: [
+        "projects-images/Paseenzai-road-Killasaifullah1.jpeg",
+        "projects-images/Paseenzai-road-Killasaifullah2.jpeg",
+        "projects-images/Paseenzai-road-Killasaifullah3.jpeg"
+      ]
     }
   ];
 
@@ -434,10 +436,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (sliderMainImg) {
     let currentProjectIndex = 0;
+    let currentImageIndex = 0;
     let cycleInterval;
 
-    function renderProject(index) {
-      const project = projectsData[index];
+    function renderProject(projectIndex, imageIndex) {
+      const project = projectsData[projectIndex];
       
       // Update text
       sliderCategory.textContent = project.category;
@@ -447,22 +450,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (sliderDots.children.length === 0) {
         projectsData.forEach((_, i) => {
           const dot = document.createElement('div');
-          dot.className = 'slider-dot' + (i === index ? ' active' : '');
+          dot.className = 'slider-dot' + (i === projectIndex ? ' active' : '');
           dot.addEventListener('click', () => {
             currentProjectIndex = i;
-            renderProject(currentProjectIndex);
+            currentImageIndex = 0;
+            renderProject(currentProjectIndex, currentImageIndex);
             resetCycle();
           });
           sliderDots.appendChild(dot);
         });
       } else {
         Array.from(sliderDots.children).forEach((dot, i) => {
-          dot.className = 'slider-dot' + (i === index ? ' active' : '');
+          dot.className = 'slider-dot' + (i === projectIndex ? ' active' : '');
         });
       }
       
       // Update main image
-      changeMainImage(project.images[0]);
+      changeMainImage(project.images[imageIndex]);
       
       // Render thumbnails — clear safely without innerHTML
       while (sliderThumbnails.firstChild) {
@@ -471,9 +475,10 @@ document.addEventListener('DOMContentLoaded', () => {
       project.images.forEach((imgSrc, i) => {
         const thumb = document.createElement('img');
         thumb.src = imgSrc;
-        thumb.className = 'slider-thumbnail' + (i === 0 ? ' active' : '');
+        thumb.className = 'slider-thumbnail' + (i === imageIndex ? ' active' : '');
         thumb.draggable = false; // SECURITY: Prevent drag
         thumb.addEventListener('click', () => {
+          currentImageIndex = i;
           // Update active thumbnail styling
           Array.from(sliderThumbnails.children).forEach(t => t.classList.remove('active'));
           thumb.classList.add('active');
@@ -497,33 +502,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 250);
     }
 
-    function showNextProject() {
-      currentProjectIndex = (currentProjectIndex + 1) % projectsData.length;
-      renderProject(currentProjectIndex);
+    function showNext() {
+      const project = projectsData[currentProjectIndex];
+      if (currentImageIndex < project.images.length - 1) {
+        // More images in this project — go to next image
+        currentImageIndex++;
+      } else {
+        // Last image — move to next project, first image
+        currentProjectIndex = (currentProjectIndex + 1) % projectsData.length;
+        currentImageIndex = 0;
+      }
+      renderProject(currentProjectIndex, currentImageIndex);
     }
 
-    function showPrevProject() {
-      currentProjectIndex = (currentProjectIndex - 1 + projectsData.length) % projectsData.length;
-      renderProject(currentProjectIndex);
+    function showPrev() {
+      if (currentImageIndex > 0) {
+        // Go to previous image within this project
+        currentImageIndex--;
+      } else {
+        // First image — move to previous project, last image
+        currentProjectIndex = (currentProjectIndex - 1 + projectsData.length) % projectsData.length;
+        currentImageIndex = projectsData[currentProjectIndex].images.length - 1;
+      }
+      renderProject(currentProjectIndex, currentImageIndex);
     }
 
     function resetCycle() {
       clearInterval(cycleInterval);
-      cycleInterval = setInterval(showNextProject, 5000);
+      cycleInterval = setInterval(showNext, 5000);
     }
 
     btnPrev.addEventListener('click', () => {
-      showPrevProject();
+      showPrev();
       resetCycle();
     });
 
     btnNext.addEventListener('click', () => {
-      showNextProject();
+      showNext();
       resetCycle();
     });
 
     // Initialize
-    renderProject(currentProjectIndex);
+    renderProject(currentProjectIndex, currentImageIndex);
     resetCycle();
   }
 
